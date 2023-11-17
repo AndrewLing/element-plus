@@ -118,7 +118,7 @@ const rules = reactive<FormRules<RuleForm>>({
     {
       required: true,
       message: 'Please select Activity zone',
-      trigger: 'change',
+      trigger: ['change', 'blur'],
     },
   ],
   count: [
